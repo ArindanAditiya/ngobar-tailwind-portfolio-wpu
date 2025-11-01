@@ -3,9 +3,72 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- library -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <link href="src/output.css" rel="stylesheet" />
   </head>
-  <body>
-    <h1 class="text-3xl font-bold underline text-blue-300">Hello world!</h1>
+  <body class="font-inter">
+    <!-- hero section start -->
+    <section id="home" class="pt-36">
+      <div class="container mx-auto max-w-6xl justify-center">
+        <div class="flex flex-wrap  justify-center">
+          <div class="w-full self-center px-4 lg:w-1/2 ">
+            <span class="text-base text-slate-800">Hi there 👋, I,m </span>
+            <h1 class="lg:text-6xl bg-linear-to-r from-primary to-secondary bg-clip-text text-transparent">Arindan Aditiya</h1>
+            <div class="h-6 flex items-center my-3"><h2 id="typed" class="text-[20px] inline-block lg:text-2xl"></h2></div>
+            <p class="text-sm font-light italic w-3/4">
+              “Beri aku 10 <mark>pemuda</mark>, niscaya akan kuguncangkan dunia” <br />
+              - <b>Ir. Soekarno</b> -
+            </p>
+            <a class="btn mt-5"> Who I'm</a>
+          </div>
+          <!-- hero image -->
+          <div class="w-full self-end px-4 lg:w-1/2 ">
+            <div class="mt-1 relative w-80 h-72 mx-auto">
+              <div class="absolute left-1/2 -translate-x-1/2 flex justify-center items-center overflow-hidden lg:w-2xl">
+                <svg class="relative animate-spin-slow w-60 h-60 translate-y-2.5 lg:scale-150" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                  <path fill="oklch(51.1% 0.096 186.391)" d="M37.7,24.3C23.8,45.8,-29.8,47,-42.7,26C-55.6,5.1,-27.8,-38,-1,-38.6C25.8,-39.1,51.6,2.8,37.7,24.3Z" transform="translate(100 100) scale(1.5)" />
+                </svg>
+              </div>
+  
+              <!-- Foto profil -->
+              <img class="absolute left-1/2 -translate-x-1/2 z-10 w-[220px] drop-shadow-xl/25 sm:scale-150" src="img/profile.png" alt="profile" />
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- about -->
+    <section id="about">
+        <div class="container  mx-auto max-w-6xl ">
+          <div class="flex flex-wrap  justify-center ">
+            <div class="w-full self-center px-4 md:order-2 lg:w-3/5  mt-6  ">
+              <h2 class="text-center">About Me</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam facere ullam iusto ex consectetur quod tempora unde nesciunt, voluptas maiores accusamus illo. Voluptate repudiandae asperiores corrupti obcaecati placeat tenetur quaerat, sed aut, quas pariatur, voluptatem nemo corporis veritatis alias adipisci.</p>
+            </div>
+            <div class="w-full self-right px-4 relative md:order-1 lg:w-2/5 ">
+              <div class="h-[210px] w-[200px]  relative overflow-hidden lg:left-1/2 border-l-8 border-primary ">
+                  <div class="absolute left-3 -translate-y-[37px] ">
+                    <iframe class="" src="https://my.spline.design/robotfollowcursorforlandingpage-C1JPbBDWL7CyqO6X3qmI95ej/" frameborder="1" width="400px" height="300px"></iframe>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <div class="mb-[500px]"></div>
+
+    <!-- hero section end -->
+    <script>
+      var typed = new Typed("#typed", {
+        strings: ["Dosen", "Programmer", "Youtuber"],
+        typeSpeed: 100,
+        backSpeed: 30,
+        loop: true,
+      });
+    </script>
   </body>
 </html>

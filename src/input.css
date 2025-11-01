@@ -1,1 +1,38 @@
 @import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Merriweather:wght@400;700&display=swap");
+
+@theme {
+  --color-primary: oklch(79.2% 0.209 151.711);
+  --color-secondary: oklch(51.1% 0.096 186.391);
+  --font-inter: "Inter", sans-serif;
+}
+
+@layer base {
+  body {
+    @apply font-inter;
+  }
+  h1 {
+    @apply text-4xl font-bold text-primary my-1;
+  }
+  h2 {
+    @apply text-xl font-bold text-primary my-1;
+  }
+  p {
+    @apply my-1;
+  }
+  b {
+    @apply font-bold;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply py-2 px-8 inline-block text-white rounded-full font-bold shadow cursor-pointer bg-primary hover:bg-transparent hover:text-primary border-2 border-transparent hover:border-primary transition ease-in-out duration-100;
+  }
+}
+
+@layer utilities {
+  .animate-spin-slow {
+    animation: spin 5s linear infinite;
+  }
+}
